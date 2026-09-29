@@ -626,7 +626,8 @@
 
   /* ================= DATA ================= */
   // Este plan no tiene día "casa": los cinco días declarados son de fuerza y
-  // la movilidad/cardio van como cierre de sesión (precedente ya resuelto, spec §10 registro 2026-09-11, punto 4). HOME_DAY_WARNING se
+  // la movilidad/cardio van como cierre de sesión (precedente ya resuelto,
+  // spec §10 registro 2026-09-11, punto 4). HOME_DAY_WARNING se
   // define porque el MOTOR lo referencia, pero nunca se renderiza.
   var HOME_DAY_WARNING = { title:"El cierre también entrena", text:"Movilidad y cardio, sin apuro: es lo que sostiene las cinco sesiones de fuerza de la semana." };
 
@@ -715,7 +716,8 @@
   function dayFull(){
     // Ningún ejercicio usa ladder por %1RM: la ficha declara equipamiento
     // "ninguno / peso corporal", así que todos entran con ladder:null y
-    // progresan por variante, tempo y rango vía bw{} (precedente otro plan ya documentado, spec §4.5).
+    // progresan por variante, tempo y rango vía bw{} (precedente ya
+    // documentado, spec §4.5).
     // 5 ejercicios por día — la ficha marca 30–45 min por sesión (spec §4.6).
     // Estructura fija de cada día, por la prioridad escrita a mano en la ficha
     // ("dar prioridad a Abdomen y Gemelos"): 2 patrones grandes + 2 de core +
@@ -798,7 +800,7 @@
   // Ficha: 5 o más días/semana, 30–45 min, marca lunes a viernes (sábado y
   // domingo no están marcados). Cinco días de fuerza y fin de semana de
   // descanso; movilidad y cardio van como cierre de sesión, no como día
-  // aparte, así que no hay día "home" (precedente ya resuelto).
+  // aparte, así que no hay día "home" (precedente ya resuelto en el spec).
   var WEEK_TEMPLATE = [
     {num:"Lunes",     name:"Fuerza · Rodilla y empuje", tag:"gym", slot:"A", occ:1},
     {num:"Martes",    name:"Fuerza · Cadera y tracción + cardio", tag:"gym", slot:"B", occ:1},
